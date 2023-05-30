@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!--SEO natural-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Metallicas ACM">
+    <meta name="copyright" content="&copy;Metallicas 2022. Todos los derechos reservados">
+    <meta name="email" content="hellow@metallicasacm.com">
+    <meta name="description" content="Empresa experta en el sector de la metalmecanica, en el area metropolitana
+    de medellin, con mas de 17 años de experiencia en el sector trabajando en grandes obras y proyectos">
+    <meta name="keywords" content="Cerrajería, Metalmecanica, Soldadura, Estructuras Melaticas, Construccion">
+    <title>Metalicas ACM</title>
+
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1
+    , user-scale=0">
+
+    <!--Social Cards-->
+    <meta property="og:url" content="https://metalicasacm.com">
+    <meta property="og:type" content="website">
+    <meta property="og:tittle" content="Metalicas ACM - Cerrajería Metalmecanica">
+    <meta property="og:description" content="Empresa experta en el sector de la metalmecanica, en el area metropolitana
+    de medellin, con mas de 17 años de experiencia en el sector trabajando en grandes obras y proyectos">
+    <meta property="og:image" content="https://metalicasacm.com/image/logo">
+
+    <!--Boostrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    <!--CSS siempre debajo del Boostrap-->
+    <link rel="stylesheet" href="css/main.css">
+
+    
+    <!--Favicon icono de la pestaña-->
+    <link rel="shortcut icon" href="favicon/ACM-04.png" type="image/x-icon">
+    <link rel="icon" href="favicon/ACM-04.png" type="image/x-icon">
+
+
+</head>
+<body>
+     <!--Barra de navgeacion, bg-secodanry le escogemos el color-->
+    <header class="container-fluid bg-secondary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2">CONTACTANOS 321-562-2354</p>
+    </header>
+
+     <!--Barra de navgeacion, con navbar - expand lo hacemnos responsive. con P-3 le organizamos el padding-->
+
+    <nav class="navbar navbar-expand-lg bg-dark p-lg-1" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./image/ACM-Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <p><a class="nav-link active text-light" aria-current="page" href="home.html">INICIO</a></p>
+              </li>
+
+              <li class="nav-item">
+                <p><a class="nav-link active text-light" aria-current="page" href="home.html">SERVICIOS</a></p>
+              </li>
+
+              <li class="nav-item">
+                <p><a class="nav-link active text-light" aria-current="page" href="home.html">NOSOTROS</a></p>
+              </li>
+
+              <li class="nav-item">
+                <p><a class="nav-link active text-light" aria-current="page" href="home.html">COTIZA AQUI</a></p>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
+              <button class="btn btn-warning-outline-success" type="button">Suscribete</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--finalizacion barra de navegacion-->
+
+    <!--Sliders-->
+    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" data-bs-slide="3000">
+          <img src="./image/pulidora.jpg" class="d-block w-100" alt="slide1">
+        </div>
+
+        <div class="carousel-item" data-bs-slide="3000">
+          <img src="./image/soldador.jpg" class="d-block w-100" alt="slide2">
+        </div>
+
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="./image/soldador-fecejvvn13o4.jpg" class="d-block w-100" alt="slide3">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--end sliders-->
+
+    <!--w-5 le ponemos el width de 50, mx es el margen, alinear textto es text/center-->
+  <section class="w-5 mx-auto text-center" id="intro">
+      <!--le ponemos el padding en 3, el fs es equivalente al font-size-->
+      <h1 class="p-3 fs-3 border-top border-3">Empresa de <span>cerrajeria y metalmecanina para plasmar tus proyectos en el acero</span></h1>
+      <p><span class="text-dark">Metalicas ACM</span> Es la empresa en la cual ayudamos todos tus proyectos en metalmecanina</p>
+  </section>
+
+<section class="container-fluid text-center" id="button-service">
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex my-5 icono-wrap">
+      <img src="./image/Herrajes electricos.png" alt="" width="180" height="160">
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1">Herrajes electricos</h3>
+        <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 d-flex my-5">
+      <img src="./image/pasamanos.png" alt="" width="180" height="160">
+        <div class="mx-4">
+          <h3 class="fs-5 mt-4 px-4 pb-2">Pasamanos</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+    </div>
+  </div>
+
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex  my-5 icono-wrap">
+      <img src="./image/ventanas de aluminio.png" alt="" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-2 pb-1">Ventanas de aluminio</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 d-flex  my-3 icono-wrap">
+      <img src="./image/puertas de aluminio.png" alt="" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-2 mx-5">Puertas en aluminio</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+    </div>
+  </div>
+
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex my-5 icono-wrap">
+        <img src="./image/puertas metalicas.jpg" alt="" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1 mx-2">Puertas metalicas</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 d-flex my-5 icono-wrap">
+        <img src="./image/puertas en lamina.png"  alt="" width="185" height="160">
+        <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Puertas en lamina</h3>
+            <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-6 col-md-6 col-sm-12 d-flex my-5 icono-wrap">
+        <img src="./image/CANELES-FONDO-BLANCO.png" alt="" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Canoas metalicas</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success p-1" type="button">Cotiza aqui</button></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 d-flex my-5 icono-wrap">
+        <img src="./image/teja-upvc.jpg" class="p-1" alt="" width="180" height="160">
+        <div>
+          <h3 class="fs-5 mt-4 px-4 pb-1">Techos en UPVC</h3>
+          <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+      </div>
+  </div>
+
+  <div class="row w-75 mx-auto servicio-fila">
+    <div class="col-lg-12 col-md-6 col-sm-12 d-flex my-5 icono-wrap">
+          <img src="./image/techos estructuras.jpg" alt="" width="180" height="160">
+          <div>
+            <h3 class="fs-5 mt-4 px-4 pb-1">Estrucutras meralicas techos</h3>
+            <a href="" class="text-bg-danger"><button class="btn btn-warning-outline-success" type="button">Cotiza aqui</button></a>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!--Acerca de nosotros-->
+
+<section>
+  <div class="w-75 m-auto text-center" id="equipo">
+    <h1 class="mb-5 fs-2">Un gran equipo humano increible con
+      <span class="text-primary">
+      unos resultados de alta calidad!</span></h1>
+      <p class="fs-4">Somos una empresa antioqueña del municipio de bello, contamos 
+         con mas de 18 años de experiencia en el sector de cerrajeria y metalmecanica. 
+         Las siguientes empresas han sido nuestros aliados:
+      </p>
+  </div>
+
+  <div class="mt-5 text-center">
+    <img class="img-fluid" src="./image/Empresas4.png" alt="Empresas aliadas" width="750" height="500"
+  </div>
+  <div id="local">
+    <div class="mapa"></div>
+    <div class="wrapper">
+      <h2>Ubicado en Bello, antioquia</h2>
+      <h2 class="text-primary mb-4"
+      id="typewriter"></h2>
+      <p class="fs-5 text-body">Empresa familiar que nacio en el nucleo de bello, antioquia hace 18 años. Empezando
+        siendo reconocida e nivel local, en el cual por la experiencia y el trabajo garantizado nos fuimos
+        expandiendo a nivel departamental
+      </p>
+      <section class="d-flex" id="numeros-local">
+        <div>
+          <p class="text-primary">Cantidad de empleados en la organizacion</p>
+          <p class="fs-5">23</p>
+        </div>
+        <div>
+          <p class="text-primary">Areas de trabajo</p>
+          <p>Bello, Medellin</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="bg-dark text-light p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>PORTAFOLIO</h5>
+          <ul class="list-unstyled">
+            <li>Estructura</li>
+            <li>Bases</li>
+            <li>Soldadura</li>
+            <li>Instalación</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>NOSOTROS</h5>
+          <ul class="list-unstyled">
+            <li>Visión</li>
+            <li>Misión</li>
+            <li>Objetivo</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>SERVICIOS</h5>
+          <ul class="list-unstyled">
+            <li>Corte</li>
+            <li>Soldadura</li>
+            <li>Instalación</li>
+            <li>Diseño</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>CONTACTO</h5>
+          <ul class="list-unstyled">
+            <li><i class="fab fa-whatsapp"></i> Whatsapp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+    
+
+
+    <!--Boostrap 4 Js CDN-->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+</body>
+</html>
