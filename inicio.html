@@ -37,60 +37,62 @@
 </head>
 <body>
      <!--Barra de navgeacion, bg-secodanry le escogemos el color-->
-    <header class="container-fluid bg-secondary d-flex justify-content-center">
+    <header class="container-fluid bg-dark d-flex justify-content-center">
         <p class="text-light mb-0 p-2">CONTACTANOS 321-562-2354</p>
     </header>
 
      <!--Barra de navgeacion, con navbar - expand lo hacemnos responsive. con P-3 le organizamos el padding-->
 
-    <nav class="navbar navbar-expand-lg bg-dark p-lg-1" id="menu">
-        <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg bg-secondary p-lg-1 align-items-center" id="menu">
+      <div class="container-fluid ">
           <a class="navbar-brand" href="#">
-            <img src="./image/ACM-Logo.png" alt="">
+              <img src="./image/ACM-Logo.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
+  
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="home.html">INICIO</a></p>
-              </li>
-
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="servicio.html">SERVICIOS</a></p>
-              </li>
-
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="sobrenosotros.html">NOSOTROS</a></p>
-              </li>
-
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="home.html">COTIZA AQUI</a></p>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
-              <button class="btn btn-warning-outline-success" type="button">Suscribete</button>
-            </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <p class="mi-enlace"><a class="nav-link active text-light " aria-current="page" href="inicio.html">INICIO</a></p>
+                  </li>
+  
+                  <li class="nav-item">
+                      <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="servicio.html">SERVICIOS</a></p>
+                  </li>
+  
+                  <li class="nav-item">
+                      <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="sobrenosotros.html">NOSOTROS</a></p>
+                  </li>
+  
+                  <li class="nav-item">
+                      <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="home.html">COTIZA AQUI</a></p>
+                  </li>
+              </ul>
+              <form class="d-flex " role="search">
+                  <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
+                  <button class="btn" type="button">Suscribete</button>
+              </form>
           </div>
-        </div>
-      </nav>
+      </div>
+  </nav>
+  
     <!--finalizacion barra de navegacion-->
 
     <!--Sliders-->
-    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
       <div class="carousel-inner">
 
-        <div class="carousel-item active" data-bs-slide="3000">
+        <div class="carousel-item active" data-bs-slide="2000">
           <img src="./image/pulidora.jpg" class="d-block w-100" alt="slide1">
         </div>
 
-        <div class="carousel-item" data-bs-slide="3000">
+        <div class="carousel-item" data-bs-slide="2000">
           <img src="./image/soldador.jpg" class="d-block w-100" alt="slide2">
         </div>
 
-        <div class="carousel-item" data-bs-interval="3000">
+        <div class="carousel-item" data-bs-interval="2000">
           <img src="./image/soldador-fecejvvn13o4.jpg" class="d-block w-100" alt="slide3">
         </div>
 
@@ -109,60 +111,40 @@
     <!--w-5 le ponemos el width de 50, mx es el margen, alinear textto es text/center-->
   <section class="w-5 mx-auto text-center" id="intro">
       <!--le ponemos el padding en 3, el fs es equivalente al font-size-->
-      <h1 class="p-3 fs-3 border-top border-3">Empresa de <span>cerrajeria y metalmecanina para plasmar tus proyectos en el acero</span></h1>
-      <p><span class="text-dark">Metalicas ACM</span> Es la empresa en la cual ayudamos todos tus proyectos en metalmecanina</p>
+      <h2 class="p-3 border-top border-3 font-weight-bold">Empresa de cerrajeria y metalmecanica para plasmar tus proyectos en el acero</h1>
+      <p class="text-dark"> Metalicas ACM Es la empresa en la cual ayudamos todos tus proyectos en metalmecanina</p>
   </section>
 
 
-
-
-
-<!--Acerca de nosotros-->
-
-
-
-<!--Contactos-->
-
-<section id="seccion-contacto" class="border-bottom border-secondary border-2">
-  <div id="bg-contactos">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#82796A" fill-opacity="1" d="M0,160L24,165.3C48,171,96,181,144,186.7C192,192,240,192,288,208C336,224,384,256,432,245.3C480,235,528,181,576,181.3C624,181,672,235,720,213.3C768,192,816,96,864,101.3C912,107,960,213,1008,218.7C1056,224,1104,128,1152,112C1200,96,1248,160,1296,197.3C1344,235,1392,245,1416,250.7L1440,256L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+  <div class="table-responsive-md">
+    <table class="table ">  
+      <tbody>
+        <tr class="row">
+          <td class="col-md-6">
+            <img src="image/mapa.jpeg" class="img-fluid " alt="Responsive image"> 
+          </td>
+          
+          <td class="col-md-6 d-flex align-items-center justify-content-center">
+            <div class="text-center fs-3 mx-auto w-75">
+                <p>Pronto tendremos una tienda fisica para poderlos atender de una forma mas personal y calida,
+                    de esta forma adecuarnos a sus ideas que tanto han soñado.</p>
+                <br>
+                <p>Les estaremos avisando cuando abramos las puertas de nuestra tienda</p>
+            </div>
+        </td>
+        
+              
+        </tr>  
+      </tbody>
+    </table>
   </div>
-  <div class="conatiner" id="contenedor-formulario">
-    <div class="text-center mb-4" id="titulo-formulario">
-      <img src="image/Support-PNG-Transparent-HD-Photo.png" alt="" class="img-fluid" width="300pxpx" height="180px">
-    </div>
-    <h2>contactos</h2>
-    <p>Estamos aqui para plasmar tus ideas</p>
-    <form action="">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Marlon Monsalve">
-      </div>
-      <div class="mb-3">
-      <input type="tel" class="form-control" id="tel" rows="3" placeholder="+57 316-340-8249">
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comentanos tu diseno"></textarea>
-      </div>
-      <div class="mb-3">
-        <button type="button" class="btn btn-warning w-100 fs-5">Enviar cotizacion</button>
-      </div>
-    </form>
-  </div>
-</section>
+
+  <br>
+  <br>
+  <br>
+  <br>
 
 
-
-
-
-  <!--Formulario-->
-  
-
-    
 
 
     <!--Boostrap 4 Js CDN-->

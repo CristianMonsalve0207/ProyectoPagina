@@ -15,39 +15,48 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark p-lg-1" id="menu">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+
+     <!--Barra de navgeacion, bg-secodanry le escogemos el color-->
+  <header class="container-fluid bg-dark d-flex justify-content-center">
+      <p class="text-light mb-0 p-2">CONTACTANOS 321-562-2354</p>
+  </header>
+
+   <!--Barra de navgeacion, con navbar - expand lo hacemnos responsive. con P-3 le organizamos el padding-->
+
+   <nav class="navbar navbar-expand-lg bg-secondary p-lg-1 align-items-center" id="menu">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
             <img src="./image/ACM-Logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="inicio.html">INICIO</a></p>
-              </li>
+                <li class="nav-item">
+                    <p class="mi-enlace"><a class="nav-link active text-light " aria-current="page" href="inicio.html">INICIO</a></p>
+                </li>
 
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="servicio.html">SERVICIOS</a></p>
-              </li>
+                <li class="nav-item">
+                    <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="servicio.html">SERVICIOS</a></p>
+                </li>
 
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="sobrenosotros.html">NOSOTROS</a></p>
-              </li>
+                <li class="nav-item">
+                    <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="sobrenosotros.html">NOSOTROS</a></p>
+                </li>
 
-              <li class="nav-item">
-                <p><a class="nav-link active text-light" aria-current="page" href="home.html">COTIZA AQUI</a></p>
-              </li>
+                <li class="nav-item">
+                    <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="home.html">COTIZA AQUI</a></p>
+                </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
-              <button class="btn btn-warning-outline-success" type="button">Suscribete</button>
+            <form class="d-flex " role="search">
+                <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
+                <button class="btn" type="button">Suscribete</button>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
 
     <section class="container-fluid text-center" id="button-service">
         <div class="row w-75 mx-auto servicio-fila">
