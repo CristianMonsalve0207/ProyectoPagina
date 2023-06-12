@@ -6,7 +6,13 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+
+ 
+         
 }
+
+
+
 
 /*Estilos del menu*/
 
@@ -151,3 +157,4 @@ titulo-formulario{
     background-color: #f2811d;
     border-color: #f2811d;
 }
+
