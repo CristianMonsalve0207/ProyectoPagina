@@ -1,0 +1,74 @@
+{
+    "usuarios": [
+      {
+        "id": 1234567,
+        "correo": "ejemplo@gmail.com",
+        "contrasena": "contraseña123",
+        "nombre": "Ejemplo_1",
+        "apellido": "Ejemplo_1",
+        "telefono": "12345678",
+        "direccion": "Ejemplo",
+        "compras": [],
+        "activo": false
+      },
+
+      {
+        "id": 1234568,
+        "correo": "ejemplo_2@gmail.com",
+        "contrasena": "contraseña123",
+        "nombre": "Ejemplo_2",
+        "apellido": "Ejemplo_2",
+        "telefono": "12345678",
+        "direccion": "Ejemplo",        
+        "compras": [],
+        "activo": false
+      },
+
+      {
+        "id": 1234566,
+        "correo": "ejemplo_3@gmail.com",
+        "contrasena": "contraseña123",
+        "nombre": "Ejemplo_3",
+        "apellido": "Ejemplo_4",
+        "telefono": "12345678",
+        "direccion": "Ejemplo",        
+        "compras": [],
+        "activo": false
+      },
+
+      {
+        "id": 1234538,
+        "correo": "ejemplo_4@gmail.com",
+        "contrasena": "contraseña123",
+        "nombre": "Ejemplo_5",
+        "apellido": "Ejemplo_5",
+        "telefono": "12345678",
+        "direccion": "Ejemplo",        
+        "compras": [],
+        "activo": false
+      },
+
+      {
+        "id": 12368,
+        "correo": "ejemplo_5@gmail.com",
+        "contrasena": "contraseña123",
+        "nombre": "Ejemplo_6",
+        "apellido": "Ejemplo_6",
+        "telefono": "12345678",
+        "direccion": "Ejemplo",
+        "compras": [],
+        "activo": false
+      }
+
+
+
+
+
+
+    ]
+
+
+
+
+  }
+  

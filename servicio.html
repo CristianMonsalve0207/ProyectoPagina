@@ -21,9 +21,10 @@
 
 
   <!--Barra de navgeacion, bg-secodanry le escogemos el color-->
-  <header class="container-fluid bg-dark d-flex justify-content-center">
-    <p class="text-light mb-0 p-2">CONTACTANOS 321-562-2354</p>
-  </header>
+  <header class="container-fluid bg-dark d-flex justify-content-between">
+    <p class="text-light mb-0 p-2" id="contactanos">CONTACTANOS 321-562-2354</p>
+    <p class="text-light mb-0 p-2 ml" id="usuario"></p>
+</header>
 
   <!--Barra de navgeacion, con navbar - expand lo hacemnos responsive. con P-3 le organizamos el padding-->
 
@@ -58,12 +59,18 @@
             <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="CotizaAqui.html">COTIZA AQUI</a></p>
           </li>
         </ul>
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
-          <button class="btn " type="button">Suscribete</button>
-          <button type="button" class="btn rounded "><img src="image/person.svg" height="35" width="20" /></button>
+          <button class="btn " type="button" id="Suscribir">Suscribete</button>
+          <button type="button" class="btn rounded "><img src="image/person.svg" height="35" width="20" id="login"/> </button>
         </form>
         
+
+        
+
+
+
       </div>
     </div>
   </nav>
@@ -322,7 +329,8 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="assets/js/type.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="assets/js/scrips.js"></script>
 
 </body>
 
