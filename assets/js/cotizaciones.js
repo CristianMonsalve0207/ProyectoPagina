@@ -2,20 +2,34 @@ $(document).ready(function () {
     $("#Gen_cot").submit(function (event) {
         event.preventDefault();
 
+        var fechaActual = new Date();
+        var horaActual = fechaActual.getHours();
+        var minutosActuales = fechaActual.getMinutes();
+
+        var fechaFormateada = fechaActual.toLocaleDateString();
+        var horaFormateada = horaActual + ":" + minutosActuales;
+
         var L_instalacion = $("#L_instalacion").val();
         var tipo = $("#tipo").val();
         var material = $("#material").val();
         var Ciudad = $("#Ciudad").val();
         var idea = $("#idea").val();
         var materiales = $("#materiales").val();
+        var fecha = fechaFormateada;
+        var hora = horaFormateada;
+        var id = Math.floor(Math.random() * 10000000) + 1;
 
         var nuevacompra = {
+            id: id,
             L_instalacion: L_instalacion,
             tipo: tipo,
             material: material,
             Ciudad: Ciudad,
             idea: idea,
-            materiales: materiales
+            materiales: materiales,
+            fecha: fecha,
+            hora: hora
+
         };
 
         // Recupera el string de usuarios del almacenamiento local
@@ -33,11 +47,11 @@ $(document).ready(function () {
             });
 
             console.log(usuarioActivo);
-            console.log(typeof usuarioActivo);  
+            console.log(typeof usuarioActivo);
 
             if (usuarioActivo !== undefined) {
                 // Comprueba si usuarioActivo.compras es un array
-                if(!Array.isArray(usuarioActivo.compras)) {
+                if (!Array.isArray(usuarioActivo.compras)) {
                     usuarioActivo.compras = [];
                 }
                 usuarioActivo.compras.push(nuevacompra);
@@ -46,14 +60,14 @@ $(document).ready(function () {
             } else {
                 console.log("No hay usuarios activos en el sistema v3 ");
             }
-            
+
 
             // Si no hay datos en el almacenamiento local...
         } else {
             console.log("No hay datos de usuarios almacenados en el localStorage v3");
         }
 
-        
+
 
     });
 });
