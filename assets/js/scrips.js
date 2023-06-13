@@ -14,19 +14,19 @@
   
   
 
+
   $(document).ready(function() {
     // Recupera el string de usuarios del almacenamiento local
-    var usuariosString = localStorage.getItem('usuarios');
+    var usuariosString = localStorage.getItem('datos');
   
     // Si hay algún dato en el almacenamiento local...
     if (usuariosString) {
-      // Parsea el string a un array de objetos
-      var usuarios = JSON.parse(usuariosString);
-      
-  
+      // Parsea el string a un objeto
+      var usuariosObj = JSON.parse(usuariosString);
+      var usuarios = usuariosObj.usuarios;
+
       // Busca si hay algún usuario con el estado 'activo' igual a true
       var usuarioActivo = usuarios.find(function(usuario) {
-        
         return usuario.activo == true;
       });
 
@@ -38,8 +38,6 @@
         $("#usuario").text(usuarioActivo.nombre);
         var botonHTML = '<button class="btn btn-light mb-0 p-2" id="miBoton">Cerrar seccion</button>';
         $("header").append(botonHTML);
-      
-
 
         console.log("Hay un usuario activo en el sistema");
       } else {
@@ -54,21 +52,14 @@
     $('body').on('click', '#miBoton', function() {
      //cambia el estado del usuario a inactivo y guarda los cambios en el almacenamiento local
      usuarioActivo.activo = false;
-     localStorage.setItem('usuarios', JSON.stringify(usuarios));
+     localStorage.setItem('datos', JSON.stringify(usuariosObj));
      //recarga la página nuevamente
         location.reload();
 
-
-
-
         alert('Has hecho clic en el botón');
     });
+});
 
-
-
-
-
-  });
   
 
 
