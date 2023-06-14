@@ -4,7 +4,7 @@ $("#gato").click(function (event) {
     
     console.log("voy aca");
 
-
+    
 
     // Obtener los valores de los campos de entrada
     var correo = $("#correo").val();
@@ -15,7 +15,16 @@ $("#gato").click(function (event) {
     var direccion = $("#direccion").val();
     var imagenPerfil = document.getElementById("imagenPerfil");
     var archivoImagen = imagenPerfil.files[0];
-    var nombreArchivoImagen = archivoImagen.name;
+   
+
+    try {
+        // El código que puede lanzar un error
+        var nombreArchivoImagen = archivoImagen.name;
+      } catch (error) {
+        // Código para manejar o ignorar el error
+        console.log('Ha ocurrido un error, pero lo estamos ignorando.');
+        
+      }
 
 
 

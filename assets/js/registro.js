@@ -3,6 +3,8 @@ $(document).ready(function() {
   $("#validar").submit(function(event) {
     event.preventDefault();
 
+    
+
     // Obtener los valores de los campos de entrada
     var correo = $("#correo").val();
     var contrasena = $("#contraseña").val();
@@ -12,7 +14,18 @@ $(document).ready(function() {
     var direccion = $("#direccion").val();
     var imagenPerfil = document.getElementById("imagenPerfil");
     var archivoImagen = imagenPerfil.files[0];
-    var nombreArchivoImagen = archivoImagen.name;
+    
+
+
+
+    try {
+      // El código que puede lanzar un error
+      var nombreArchivoImagen = archivoImagen.name;
+    } catch (error) {
+      // Código para manejar o ignorar el error
+      console.log('Ha ocurrido un error, pero lo estamos ignorando.');
+      
+    }
 
     // Crear un número aleatorio de 7 dígitos para el id
     var id = Math.floor(Math.random() * 10000000) + 1;
@@ -35,7 +48,7 @@ $(document).ready(function() {
     };
 
     // Mostrar alerta con la información del nuevo usuario
-    alert(JSON.stringify(nuevoUsuario, null, 2));
+    //alert(JSON.stringify(nuevoUsuario, null, 2));
 
     // Recuperar los datos existentes en el almacenamiento local
     var datosGuardados = localStorage.getItem("datos");
