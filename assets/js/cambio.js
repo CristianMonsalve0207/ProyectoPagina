@@ -1,7 +1,10 @@
-$(document).ready(function() {
-  // Agregar evento submit al formulario
-  $("#validar").submit(function(event) {
-    event.preventDefault();
+
+$("#gato").click(function (event) {
+    
+    
+    console.log("voy aca");
+
+
 
     // Obtener los valores de los campos de entrada
     var correo = $("#correo").val();
@@ -14,23 +17,20 @@ $(document).ready(function() {
     var archivoImagen = imagenPerfil.files[0];
     var nombreArchivoImagen = archivoImagen.name;
 
-    // Crear un número aleatorio de 7 dígitos para el id
-    var id = Math.floor(Math.random() * 10000000) + 1;
-    
+
+
 
 
     // Crear el objeto con los datos del nuevo usuario
     var nuevoUsuario = {
-      "id": id,
-      "correo": correo,
-      "contrasena": contrasena,
-      "nombre": nombre,
-      "apellido": apellido,
-      "telefono": telefono,
-      "direccion": direccion,
-      "compras": [],
-      "activo": false,
-      "imagenPerfil": "./image/"+ nombreArchivoImagen
+
+        "correo": correo,
+        "contrasena": contrasena,
+        "nombre": nombre,
+        "apellido": apellido,
+        "telefono": telefono,
+        "direccion": direccion,
+        "imagenPerfil": "./image/" + nombreArchivoImagen
 
     };
 
@@ -43,15 +43,39 @@ $(document).ready(function() {
     // Verifica si existen datos en el almacenamiento local
     var datos;
     if (datosGuardados) {
-      // Analiza los datos existentes en formato JSON
-      datos = JSON.parse(datosGuardados);
+        // Analiza los datos existentes en formato JSON
+        datos = JSON.parse(datosGuardados);
     } else {
-      // Si no hay datos existentes, crea un objeto vacío
-      datos = { usuarios: [] };
+        // Si no hay datos existentes, crea un objeto vacío
+        datos = { usuarios: [] };
     }
 
-    // Agregar los nuevos datos al objeto existente
-    datos.usuarios.push(nuevoUsuario);
+    //buscar si hay un usuario con el estado true
+    var usuarioActivo = datos.usuarios.find(function (usuario) {
+        return usuario.activo == true;
+    });
+
+    //actualizar los datos del usuario activo con los datos del nuevo usuario
+    usuarioActivo.correo = correo;
+    usuarioActivo.contrasena = contrasena;
+    usuarioActivo.nombre = nombre;
+    usuarioActivo.apellido = apellido;
+    usuarioActivo.telefono = telefono;
+    usuarioActivo.direccion = direccion;
+    usuarioActivo.imagenPerfil = "./image/" + nombreArchivoImagen;
+
+
+
+
+
+    datos.usuarios.splice(usuarioActivo, 1, usuarioActivo);
+
+
+
+
+
+
+
 
     // Convertir el objeto en formato JSON
     var datosActualizados = JSON.stringify(datos);
@@ -60,5 +84,21 @@ $(document).ready(function() {
     localStorage.setItem("datos", datosActualizados);
 
     window.location.href = "./inicio.html";
-  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
+

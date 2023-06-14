@@ -1,6 +1,57 @@
 $(document).ready(function () {
+
+
+
+$("#mas").click(function (e) { 
+    alert("Se ha agregado un nuevo material");
+
+    
+    var tipo = $("#tipo").val();
+    var material = $("#material").val();
+    var Ciudad = $("#Ciudad").val();
+    
+
+
+
+
+    $("table tbody").append(
+        "<tr>" +
+        "<td>" + ($("table tbody tr").length + 1) + "</td>" +
+        "<td>" + tipo + "</td>" +
+        "<td>" + material + "</td>" +
+        "<td>" + Ciudad + "</td>" +
+        "</tr>"
+    );
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $("#Gen_cot").submit(function (event) {
         event.preventDefault();
+
+
+        var materialesArray = $("table tbody tr").map(function () {
+            return {
+                No: $(this).find('td').eq(0).text(),
+                Tipo: $(this).find('td').eq(1).text(),
+                Material: $(this).find('td').eq(2).text(),
+                Cantidad: $(this).find('td').eq(3).text()
+            };
+        }).get();
 
         var fechaActual = new Date();
         var horaActual = fechaActual.getHours();
@@ -9,22 +60,16 @@ $(document).ready(function () {
         var fechaFormateada = fechaActual.toLocaleDateString();
         var horaFormateada = horaActual + ":" + minutosActuales;
 
-        var L_instalacion = $("#L_instalacion").val();
-        var tipo = $("#tipo").val();
-        var material = $("#material").val();
-        var Ciudad = $("#Ciudad").val();
+        var L_instalacion = $("#L_instalacion").val();       
         var idea = $("#idea").val();
-        var materiales = $("#materiales").val();
+        var materiales =  materialesArray;
         var fecha = fechaFormateada;
         var hora = horaFormateada;
         var id = Math.floor(Math.random() * 10000000) + 1;
 
         var nuevacompra = {
             id: id,
-            L_instalacion: L_instalacion,
-            tipo: tipo,
-            material: material,
-            Ciudad: Ciudad,
+            L_instalacion: L_instalacion,            
             idea: idea,
             materiales: materiales,
             fecha: fecha,
@@ -68,6 +113,6 @@ $(document).ready(function () {
         }
 
 
-
+        location.reload();
     });
 });
