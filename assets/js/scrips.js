@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 
       // var botonHTML ='<li class="nav-item div class=" btn-group-vertical role="group" aria-label=""><div class="btn-group" role="group"><button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+usuarioActivo.nombre+'</button><div class="dropdown-menu" aria-labelledby="dropdownId"><a class="dropdown-item" href="#">Perfil</a><a class="dropdown-item" href="#">Cerrar seccion</a></div></div></li>'
-      var botonHTML = '<li class="nav-item div class=" btn-group-vertical role="group" aria-label=""><div class="btn-group" role="group"><button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' + usuarioActivo.nombre + '</button><div class="dropdown-menu" aria-labelledby="dropdownId"><a class="dropdown-item" href="#">Perfil</a><a class="dropdown-item" href="./actualizar.html" id="">Editar Perfil</a><a class="dropdown-item" href="#" id="cerrarSesion">Cerrar sesión</a></div></div></li>';
+      var botonHTML = '<li class="nav-item div class=" btn-group-vertical role="group" aria-label=""><div class="btn-group" role="group"><button id="dropdownId" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' + usuarioActivo.nombre + '</button><div class="dropdown-menu" aria-labelledby="dropdownId"><a class="dropdown-item" href="./perfil.html">Perfil</a><a class="dropdown-item" href="./actualizar.html" id="">Editar Perfil</a><a class="dropdown-item" href="#" id="cerrarSesion">Cerrar sesión</a></div></div></li>';
 
 
       $("header").append(botonHTML);
