@@ -14,6 +14,7 @@ $(document).ready(function() {
     var direccion = $("#direccion").val();
     var imagenPerfil = document.getElementById("imagenPerfil");
     var archivoImagen = imagenPerfil.files[0];
+
     
 
 
@@ -43,7 +44,7 @@ $(document).ready(function() {
       "direccion": direccion,
       "compras": [],
       "activo": false,
-      "imagenPerfil": "./image/"+ nombreArchivoImagen
+      "imagenPerfil": "./FotoNosotros/"+ nombreArchivoImagen
 
     };
 

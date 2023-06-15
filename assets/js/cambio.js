@@ -1,4 +1,101 @@
 
+$(document).ready(function () {
+    // Recupera el string de usuarios del almacenamiento local
+    var usuariosString = localStorage.getItem('datos');
+
+    // Si hay algún dato en el almacenamiento local...
+    if (usuariosString) {
+        // Parsea el string a un objeto
+        var usuariosObj = JSON.parse(usuariosString);
+        var usuarios = usuariosObj.usuarios;
+
+        // Busca si hay algún usuario con el estado 'activo' igual a true
+        var usuarioActivo = usuarios.find(function (usuario) {
+            return usuario.activo == true;
+        });
+
+        console.log(usuarioActivo);
+        console.log(typeof usuarioActivo);  // Añade esta línea
+
+        if (usuarioActivo !== undefined) {
+
+
+            //capturar el nombre del usuario activo
+            var nombreUsuario = usuarioActivo.nombre;
+            //capturar el apellido del usuario activo
+            var apellidoUsuario = usuarioActivo.apellido;          
+            //capturar el email del usuario activo
+            var emailUsuario = usuarioActivo.correo;
+            //capturar el telefono del usuario activo
+            var telefonoUsuario = usuarioActivo.telefono;           
+            //capturar la direccion del usuario activo
+            var direccionUsuario = usuarioActivo.direccion;
+            //capturar la contraseña del usuario activo
+            var contraseñaUsuario = usuarioActivo.contrasena;
+
+
+            
+            $("#nombre").val(nombreUsuario);
+            $("#apellido").val(apellidoUsuario);
+            $("#correo").val(emailUsuario);
+            $("#contraseña").val(contraseñaUsuario);
+            $("#direccion").val(direccionUsuario);
+            $("#telefono").val(telefonoUsuario);
+            
+
+                console.log("Hay un usuario activo en el sistema");
+            } else {
+                console.log("No hay usuarios activos en el sistema");
+            }
+
+            // Si no hay datos en el almacenamiento local...
+        } else {
+            console.log("No hay datos de usuarios almacenados en el localStorage");
+        }
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $("#gato").click(function (event) {
     
     
@@ -71,17 +168,10 @@ $("#gato").click(function (event) {
     usuarioActivo.apellido = apellido;
     usuarioActivo.telefono = telefono;
     usuarioActivo.direccion = direccion;
-    usuarioActivo.imagenPerfil = "./image/" + nombreArchivoImagen;
-
-
-
+    usuarioActivo.imagenPerfil = "./FotoNosotros/" + nombreArchivoImagen;
 
 
     datos.usuarios.splice(usuarioActivo, 1, usuarioActivo);
-
-
-
-
 
 
 
@@ -93,20 +183,6 @@ $("#gato").click(function (event) {
     localStorage.setItem("datos", datosActualizados);
 
     window.location.href = "./inicio.html";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 });

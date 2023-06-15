@@ -27,19 +27,6 @@ $("#mas").click(function (e) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     $("#Gen_cot").submit(function (event) {
         event.preventDefault();
 
@@ -73,7 +60,10 @@ $("#mas").click(function (e) {
             idea: idea,
             materiales: materiales,
             fecha: fecha,
-            hora: hora
+            hora: hora,
+            estado: "pendiente", 
+            modo:"Manual"
+            
 
         };
 

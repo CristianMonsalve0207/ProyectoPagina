@@ -14,6 +14,7 @@ $('#validar').submit(function (event) {
     var usuariosJSON = localStorage.getItem('datos');
     if (!usuariosJSON) {
         console.error('No hay datos de usuarios en el almacenamiento local.');
+        alert('No hay datos de usuarios en el almacenamiento local.');
         return;
     }
 
@@ -47,10 +48,12 @@ $('#validar').submit(function (event) {
         } else {
             // Contraseña incorrecta
             console.error('Contraseña incorrecta');
+            alert('Contraseña incorrecta');
         }
     } else {
         // El usuario no existe
         console.error('El usuario no existe');
+        alert('El usuario no existe');
     }
    
 

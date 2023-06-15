@@ -24,14 +24,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -72,7 +73,7 @@ $(document).ready(function () {
 
 
 
-
+    window.location.href = "./servicio.html";
 
   });
 
@@ -99,14 +100,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -145,7 +147,7 @@ $(document).ready(function () {
     }
 
 
-
+    window.location.href = "./servicio.html";
 
 
 
@@ -174,14 +176,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -220,7 +223,7 @@ $(document).ready(function () {
     }
 
 
-
+    window.location.href = "./servicio.html";
 
 
 
@@ -250,14 +253,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -297,7 +301,7 @@ $(document).ready(function () {
 
 
 
-
+    window.location.href = "./servicio.html";
 
 
   });
@@ -325,14 +329,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -372,7 +377,7 @@ $(document).ready(function () {
 
 
 
-
+    window.location.href = "./servicio.html";
 
 
   });
@@ -403,14 +408,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -450,36 +456,7 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    window.location.href = "./servicio.html";
 
   });
 
@@ -511,14 +488,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -557,34 +535,7 @@ $(document).ready(function () {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    window.location.href = "./servicio.html";
 
   });
 
@@ -613,14 +564,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -660,7 +612,7 @@ $(document).ready(function () {
 
 
 
-
+    window.location.href = "./servicio.html";
 
 
   });
@@ -691,14 +643,15 @@ $(document).ready(function () {
 
     var nuevacompra = {
       id: id,
-      L_instalacion: L_instalacion,
+      idea: L_instalacion,
       tipo: tipo,
       material: material,
-      Ciudad: Ciudad,
-      idea: idea,
+      Ciudad: Ciudad,      
       materiales: materiales,
       fecha: fecha,
-      hora: hora
+      hora: hora,
+      modo:"online",
+      estado:"Pendiente"
     };
 
     // Recupera el string de usuarios del almacenamiento local
@@ -739,42 +692,12 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    window.location.href = "./servicio.html";
 
 
 
 
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
