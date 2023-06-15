@@ -18,8 +18,56 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid bg-dark d-flex justify-content-between">
+        <p class="text-light mb-0 p-2" id="contactanos">CONTACTANOS 321-562-2354</p>
+        <p class="text-light mb-0 p-2 ml" id="usuario"></p>
     </header>
+
+
+    <nav class="navbar navbar-expand-lg bg-secondary p-lg-1 align-items-center" id="menu">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">
+            <img src="./image/ACM-Logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <p class="mi-enlace"><a class="nav-link active text-light " aria-current="page"
+                    href="inicio.html">INICIO</a></p>
+              </li>
+              
+            </ul>
+    
+            
+    
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <main>
         <div class="container rounded">
             <div class="col">
@@ -27,36 +75,32 @@
                     <img src="image/ACM-Logo.png" alt="logo" width="48" height="">
                 </div>
                 <section class="seccion-perfil-usuario">
-                    <div class="perfil-usuario-header">
+                    <div class="perfil-usuario-header ">
                         <div class="perfil-usuario-portada">
                             <div class="perfil-usuario-avatar">
-                                <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
-                                <button type="button" class="boton-avatar">
-                                    <i class="far fa-image"></i>
-                                </button>
+                                <img src="" alt="img-avatar" id="foto">
+
                             </div>
                         </div>
                     </div>
+<br><br>
+
+
+
                     <div class="perfil-usuario-body">
                         <div class="perfil-usuario-bio">
-                            <h3 class="titulo">Jose Correa S</h3>
+                            <h3 class="titulo" id="nombre"></h3>
                             <p class="texto"> </p>
                         </div>
                         <div class="perfil-usuario-footer">
                             <ul class="lista-datos">
-                                <li><i class="icono fas fa-map-signs" id="direccion"></i> Direccion de usuario:</li>
-                                <li><i class="icono fas fa-phone-alt" id="telefono"></i> Telefono:</li>
-                                <li><i class="icono fas fa-briefcase"></i> Trabaja en.</li>
-                                <li><i class="icono fas fa-building"></i> Cargo</li>
+                                <li><i class="text" id="id"></i></li>
+                                <li><i class="text" id="telefono"></i></li>
+                                <li><i class="text" id="email"></i></li>
+                                <li><i class="text" id="dire"></i></li>
+                                <li><i class="text" id="compras"></i></li>
                             </ul>
-                            <ul class="lista-datos">
-                                <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
-                                <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                                <li><i class="icono fas fa-user-check"></i> Registro.</li>
-                                <li><i class="icono fas fa-mail-bulk" id="correo"></i> Correo.</li>
 
-                                
-                            </ul>
                         </div>
                         <div class="redes-sociales">
                             <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
@@ -69,7 +113,7 @@
 
         </div>
 
-
+        <br><br>
 
     </main>
     <footer>
@@ -84,7 +128,9 @@
         </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="assets/js/registro.js"></script>
+    <script src="assets/js/scrips.js"></script>
+    <script src="assets/js/perfil.js"></script>
+
 
 </body>
 
